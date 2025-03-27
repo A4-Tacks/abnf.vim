@@ -1,7 +1,7 @@
-" Vim compiler file
+" Vim syntax file
 " Language:	abnf
 " Maintainer:	A4-Tacks <wdsjxhno1001@163.com>
-" Last Change:	2025-03-05
+" Last Change:	2025-03-27
 " Upstream:	https://github.com/A4-Tacks/abnf.vim
 
 " Implementing RFC-5234, RFC-7405
@@ -10,12 +10,7 @@ if exists('b:current_syntax')
   finish
 endif
 
-setlocal iskeyword=@,48-57,_,-,192-255
-
 syn case ignore
-
-setlocal comments=:;
-setlocal commentstring=;%s
 
 syn match  abnfError	/[<>"]/
 syn match  abnfComment	/;.*/
